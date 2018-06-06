@@ -6,7 +6,6 @@ const mime = require("mime");
 
 module.exports =  (ctx, next) => {
   return async (ctx, next) => {
-    console.log(ctx.url);
     const {url} = ctx;
     try {
       const state = await stat(url);
